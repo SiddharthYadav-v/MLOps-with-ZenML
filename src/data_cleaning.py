@@ -90,3 +90,5 @@ class DataCleaning:
         
 if __name__=="__main__":
     data = pd.read_csv("../data/olist_customers_dataset.csv")
+    data_cleaning = DataCleaning(data, DataPreProcessStrategy())
+    data_cleaning.handle_data()
